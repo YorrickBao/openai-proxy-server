@@ -7,6 +7,9 @@ services:
     ports:
       - "18080:8080"
     env_file: ".env"
+    volumes:
+      # optional, for tls
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     restart: unless-stopped
 ```
 
