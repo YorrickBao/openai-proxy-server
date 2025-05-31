@@ -6,6 +6,6 @@ WORKDIR /app
 COPY . .
 RUN npm install
 
-USER node
+USER root
 EXPOSE 8080
 CMD ["node", "app.js"]
